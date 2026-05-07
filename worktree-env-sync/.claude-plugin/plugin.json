@@ -1,0 +1,28 @@
+{
+  "name": "worktree-env-sync",
+  "version": "0.1.0",
+  "description": "Automatically syncs gitignored env and config files (.env*, *.yaml, *.yml) from the main project into new worktrees.",
+  "author": {
+    "name": "Dash0",
+    "email": "support@dash0.com"
+  },
+  "homepage": "https://github.com/dash0hq/claude-marketplace",
+  "repository": "https://github.com/dash0hq/claude-marketplace",
+  "license": "Apache-2.0",
+  "keywords": ["worktree", "env", "sync", "gitignore", "config"],
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "EnterWorktree",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/sync.sh\"",
+            "timeout": 10,
+            "statusMessage": "Syncing env/config files to worktree..."
+          }
+        ]
+      }
+    ]
+  }
+}

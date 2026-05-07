@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "worktree-env-sync",
+  "description": "Automatically syncs gitignored env and config files into new worktrees so they are available immediately.",
+  "owner": {
+    "name": "Dash0",
+    "email": "support@dash0.com"
+  },
+  "plugins": [
+    {
+      "name": "worktree-env-sync",
+      "description": "Copies .env*, *.yaml, and *.yml files that are gitignored from the main project into every new worktree on creation.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

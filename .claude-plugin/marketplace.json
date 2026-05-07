@@ -39,6 +39,31 @@
       ]
     },
     {
+      "name": "worktree-env-sync",
+      "description": "Automatically syncs gitignored env and config files (.env*, *.yaml, *.yml) from the main project into new worktrees.",
+      "source": {
+        "source": "github",
+        "repo": "dash0hq/worktree-env-sync"
+      },
+      "author": {
+        "name": "Dash0",
+        "email": "support@dash0.com"
+      },
+      "homepage": "https://github.com/dash0hq/worktree-env-sync",
+      "repository": "https://github.com/dash0hq/worktree-env-sync",
+      "license": "Apache-2.0",
+      "keywords": [
+        "worktree",
+        "env",
+        "sync",
+        "gitignore",
+        "config",
+        "dotenv",
+        "yaml",
+        "productivity"
+      ]
+    },
+    {
       "name": "dash0-agent-plugin",
       "description": "OpenTelemetry observability for Claude Code sessions. Captures tool calls, LLM invocations, token usage, and errors as OTel traces.",
       "source": {

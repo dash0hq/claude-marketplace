@@ -59,6 +59,27 @@
         "dash0",
         "otel"
       ]
+    },
+    {
+      "name": "ditt0",
+      "description": "Ditt0 appears above the prompt while the product-design skill runs in the dash0 repo.",
+      "source": {
+        "source": "git-subdir",
+        "url": "dash0hq/dash0",
+        "path": ".agents/skills/product-design/ditt0",
+        "ref": "main"
+      },
+      "author": {
+        "name": "Dash0",
+        "email": "support@dash0.com"
+      },
+      "repository": "https://github.com/dash0hq/dash0/tree/main/.agents/skills/product-design/ditt0",
+      "keywords": [
+        "claude-code",
+        "claude-code-plugin",
+        "design",
+        "ditt0"
+      ]
     }
   ]
 }
